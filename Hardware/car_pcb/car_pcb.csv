@@ -1,0 +1,18 @@
+Designator,Qty,Comment,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet,LCSC Part #
+"C1,C2,C3,C4,C5,C9,C11,C12,C15",9,100n,,,,Capacitor_SMD:C_0805_2012Metric,,C49678
+"C6,C14,C18,C21,C24",5,10u,,,,Capacitor_SMD:C_0805_2012Metric,,C15850
+C7,1,10n,,,,Capacitor_SMD:C_0805_2012Metric,,C1710
+C8,1,1u,,,,Capacitor_SMD:C_0805_2012Metric,,C28323
+C10,1,4.7u,,,,Capacitor_SMD:C_0805_2012Metric,,C1779 
+C19,1,390p,,,,Capacitor_SMD:C_0805_2012Metric,,C1741
+C20,1,22u,,,,Capacitor_SMD:C_0805_2012Metric,,C45783
+C22,1,430p,,,,Capacitor_SMD:C_0805_2012Metric,,C67898
+L1,1,2.2u,,,,VLS3012CX-2R2M-1:IND_VLS3012CX-2R2M-1,,C2683174
+R1,1,10k,,,,Resistor_SMD:R_0805_2012Metric,,C176201 
+"R2,R4,R6",3,1k,,,,Resistor_SMD:R_0805_2012Metric,,C17513
+"R3,R5,R7",3,2k,,,,Resistor_SMD:R_0805_2012Metric,,C17604
+"R8,R9,R11",3,100k,,,,Resistor_SMD:R_0805_2012Metric,,C25611
+R10,1,523k,,,,Resistor_SMD:R_0805_2012Metric,,C17742
+U1,1,STM32F446RET6,,,,Package_QFP:LQFP-64_10x10mm_P0.5mm,https://www.st.com/resource/en/datasheet/stm32f446re.pdf,C69336
+U2,1,TPS62152 3.3V,,,,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias,http://www.ti.com/lit/ds/symlink/TPS62150.pdf,C2070611
+U3,1,TPS82130 5V,,,,Package_LGA:Texas_SIL0008D_MicroSiP-8-1EP_2.8x3mm_P0.65mm_EP1.1x1.9mm_ThermalVias,http://www.ti.com/lit/ds/symlink/tps82130.pdf,C473914
