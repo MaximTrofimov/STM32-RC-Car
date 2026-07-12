@@ -45,10 +45,12 @@ dkms.conf
 # debug information files
 *.dwo
 
-# STM32CubeIDE specific
+# STM32CubeIDE and KiCad specific
 Debug/
 Release/
 .settings/
 .metadata/
+*-backups/
+*.kicad_prl
 *.launch
 Backup/
