@@ -67,6 +67,34 @@ The X and Y coordinates of the joystick position are read into a two variable ar
 **Autonomous Mode**
 If the joystick button is pressed, the mode is toggled to autonomous. Motors begin by running on half duty cycle and steering is set to a constant of about 20 degrees. The front, left, and right ultrasonic sensors notify the microcontroller when an obstacle is a certain distance away. Once this happens the car stops, checks its sides, goes back, and turns to the side where there is more free space. 
 
+## Firmware Configuration
+
+**Car MCU**
+<p float="left">
+  <img width="330" height="290" alt="image" src="https://github.com/user-attachments/assets/eea8dfe5-f855-4c4b-911a-75bf28a5ad72" />
+  <img width="380" height="290" alt="image" src="https://github.com/user-attachments/assets/3d7787e1-350d-4479-9a5c-52129684c758" />
+</p>
+
+**Remote MCU**
+<p float="left">
+  <img width="330" height="290" alt="image" src="https://github.com/user-attachments/assets/5ed8ac23-c24f-4cfe-a3a4-89149bfc77a6" />
+  <img width="380" height="290" alt="image" src="https://github.com/user-attachments/assets/3d7787e1-350d-4479-9a5c-52129684c758" />
+</p>
+
+## PCB Design
+
+**Car PCB**
+<p float="left">
+  <img width="550" height="290" alt="image" src="https://github.com/user-attachments/assets/a40c2313-e5f9-4964-8d71-85f389cd710c" />
+  <img width="420" height="290" alt="image" src="https://github.com/user-attachments/assets/be10933c-2023-479a-8d33-52003048a8f0" />
+</p>
+
+**Remote PCB**
+<p float="left">
+  <img width="550" height="290" alt="image" src="https://github.com/user-attachments/assets/2f732f9c-7d03-4907-a121-57011ae44a8a" />
+  <img width="450" height="290" alt="image" src="https://github.com/user-attachments/assets/f993a68f-423e-4bb0-b3cd-8a1a192fa311" />
+</p>
+
 ## Power
 
 **Car PCB**
