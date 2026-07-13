@@ -32,7 +32,7 @@ RC car with manual and autonomous modes, dual STM32 wireless communication (remo
 
 ## Overview
 - Designed two custom PCBs (remote and car) for a wirelessly-controlled RC car
-- Implemented wireless communication between two STM32 microcontrollers using embedded firmware
+- Implemented wireless communication between two STM32 microcontrollers using embedded firmware (HAL library)
 - Developed manual and autonomous modes, including obstacle avoidance using an HC-SR04 ultrasonic sensor
 
 ## Hardware
