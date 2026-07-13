@@ -61,10 +61,19 @@ Hardware/
 ## How It Works
 
 **Manual Mode**
-The X and Y coordinates of the joystick position are read into a two variable array, VR. The array is then transmitted alongside each packet using the remote PCB's NRF24L01 module, and received at the car PCB's NRF24L01 module. The DC Motors are controlled using the TB6612FNG where a maximum joystick value results in fully duty cycle, a neutral results in zero duty cycle, and a minimum results in maximum duty cycle spinning the motors the other way. The SG90 steering is controlled via a timer for PWM. if the joystick is extended to the far right or far left, the NRF24 sends a larger joystick value and therefore the pulse is set to high for longer. Both throttle and steering respond to the specific displacement of the joystick from its absolute center, giving it the ability to control speed, and steering degree. The firmware dictates what part of the packet is responsible for motors, what part for the steering angle, and what part for the mode, which is triggered via an interrupt. 
+The X and Y coordinates of the joystick position are read into a two variable array, VR. The array is then transmitted alongside each packet using the remote PCB's NRF24L01 module, and received at the car PCB's NRF24L01 module. The DC Motors are controlled using the TB6612FNG where a maximum joystick value results in fully duty cycle, a neutral results in zero duty cycle, and a minimum results in maximum duty cycle spinning the motors the other way. The SG90 steering is controlled via a timer for PWM. if the joystick is extended to the far right or far left, the NRF24L01 sends a larger joystick value and therefore the pulse is set to high for longer. Both throttle and steering respond to the specific displacement of the joystick from its absolute center, giving it the ability to control speed, and steering degree. The firmware dictates what part of the packet is responsible for motors, what part for the steering angle, and what part for the mode, which is triggered via an interrupt. 
 
 **Autonomous Mode**
 If the joystick button is pressed, the mode is toggled to autonomous. Motors begin by running on half duty cycle and steering is set to a constant of about 20 degrees. The front, left, and right ultrasonic sensors notify the microcontroller when an obstacle is a certain distance away. Once this happens the car stops, checks its sides, goes back, and turns to the side where there is more free space. 
+
+## Power
+
+**Car PCB**
+- 2S Lipo -> 3.3V (500 mA rating, STM32, NRF24L01, TB6612FNG logic): TPS62152RGTR, reference schematic on Texas Instruments Power Designer.
+- 2S Lipo -> 5V (2A rating, TB6612FNG motor power, SG90, HCSR04): TPS82130SILR, reference schematic on Texas Instruments Power Designer.
+
+**Remote PCB**
+- 1S Li-Ion -> 3.3V (600 mA rating, STM32, KY-023, NRF24L01): AP2112K-3.3TRG1, reference schematic on datasheet. Used LDO due to lower voltage difference. 
 
 ## Credits
 - Shawn Hymel STM32 Tutorial Series [https://www.youtube.com/watch?v=hyZS2p1tW-g&list=PLEBQazB0HUyRYuzfi4clXsKUSgorErmBv]
