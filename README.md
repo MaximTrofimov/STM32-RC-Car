@@ -95,6 +95,11 @@ If the joystick button is pressed, the mode is toggled to autonomous. Motors beg
   <img width="450" height="290" alt="image" src="https://github.com/user-attachments/assets/f993a68f-423e-4bb0-b3cd-8a1a192fa311" />
 </p>
 
+## Breadboard Prototyping
+
+  <img width="455" height="360" alt="image" src="https://github.com/user-attachments/assets/cfbc965b-4778-47cd-8500-be74f8106aa8" />
+
+
 ## Power
 
 **Car PCB**
