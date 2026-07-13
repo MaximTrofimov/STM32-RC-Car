@@ -56,6 +56,7 @@ Firmware/
 Hardware/
   car_pcb/       - Car PCB schematic, layout, BOM
   remote_pcb/    - Remote PCB schematic, layout, BOM
+Mechanical/       - Wheels and steering servo enclosure CAD files (STEP)
 ```
 
 ## How It Works
