@@ -51,11 +51,11 @@ RC car with manual and autonomous modes, dual STM32 wireless communication (remo
 ## Repo Structure
 ```
 Firmware/
-  car_mcu/       - STM32 firmware for the car-side MCU
-  remote_mcu/    - STM32 firmware for the remote-side MCU
+  car_mcu/       - STM32 embedded firmware for the car MCU
+  remote_mcu/    - STM32 embedded firmware for the remote MCU
 Hardware/
-  car_pcb/       - Car PCB schematic, layout, BOM
-  remote_pcb/    - Remote PCB schematic, layout, BOM
+  car_pcb/       - Car PCB, schematic, BOM
+  remote_pcb/    - Remote PCB, schematic, BOM
 Mechanical/       - Wheels and steering servo enclosure CAD files (STEP)
 ```
 
