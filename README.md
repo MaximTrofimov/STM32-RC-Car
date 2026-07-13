@@ -36,9 +36,9 @@ RC car with manual and autonomous modes, dual STM32 wireless communication (remo
 - Developed manual and autonomous modes
 
 ## Hardware
-- STM32F446RE (x2 — one in car, one in remote)
+- STM32F446RE (x2 - one in car, one in remote)
 - NucleoF446RE (x2 - prototyping)
-- NRF24L01+PA+LNA wireless transceiver modules (x2 — one for car, one for remote)
+- NRF24L01+PA+LNA wireless transceiver modules (x2 - one for car, one for remote)
 - HC-SR04 ultrasonic sensor (x3 - front, left, right)
 - SG90 servo motor (steering)
 - TB6612FNG dual H-bridge motor driver (RWD)
